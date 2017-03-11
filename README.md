@@ -1,5 +1,5 @@
 # gfmoni
 ---------------------------------------------------------------------
-Welcome to GF (Girls' Front) Simulator.
+Welcome to GF (Girls' Frontline) Simulator.
 
 This project is currently under development.
