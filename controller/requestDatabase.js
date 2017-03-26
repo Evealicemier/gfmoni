@@ -2,9 +2,11 @@
 请求数据库文件
 **********************************/
 function requestDatabase() {
-	girl = xmlRequest('girl');
-	buff = xmlRequest('buff');
-	skill = xmlRequest('skill');
+	loading(true);
+	cmd("正在读取数据库...");
+	xmlRequest('girl');
+	xmlRequest('buff');
+	xmlRequest('skill');
 	var done = 0; //监听函数完成情况
 	function xmlRequest(filename) {
 		var object = filename;
@@ -22,13 +24,13 @@ function requestDatabase() {
 					}
 					callNext(); //函数完成
 					if (object == "girl") { //开始回传数据
-						girl = str;
+						db_girl = str;
 					}
 					if (object == "buff") {
-						buff = str;
+						db_buff = str;
 					}
 					if (object == "skill") {
-						skill = str;
+						db_skill = str;
 					}
 					
 				}
@@ -39,6 +41,9 @@ function requestDatabase() {
 	function callNext() {
 		done ++;
 		if (done == 3) { //如果函数全部完成，执行下一步
+			cmd("数据库读取完成");
+			loading(false);
+			databaseDecode();
 		}
 	}		
 }
