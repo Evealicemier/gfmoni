@@ -8,6 +8,7 @@ function inilization() {
 	loading(false);
 	//初始化js函数
 	cmd("正在初始化...");
+	changePage(0);
 	requestDatabase();
 }
 
