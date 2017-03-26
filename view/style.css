@@ -52,18 +52,25 @@ body {
 	overflow: hidden;
 }
 
-/** Logo **/
-#logo {
+/** Home **/
+#home_logo {
     text-align: center;
     margin-top: 260px;
 }
-#logo p {
+#home_logo p {
 	position: relative;
 	color: #FFFFFF;
 	font-size: 14px;
 	left: 324px;
 	width: 420px;
 	letter-spacing: 44px;
+}
+
+/** Format simulator **/
+#format {
+	margin-top: 78px;
+	margin-left: 88px;
+	margin-right: 86px;
 }
 
 /** Footline **/
