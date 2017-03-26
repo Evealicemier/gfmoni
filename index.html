@@ -7,8 +7,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta charset="utf-8" />
 		<link href="./view/style.css" rel="stylesheet" type="text/css"/>
+		<script src="./controller/inilization.js"></script>
+		<script src="./controller/requestDatabase.js"></script>
 	</head>
-	<body>
+	<body onload="inilization();">
 		<div id="container">
 			<div id="headline">
 				<span><p>首页</p></span>
@@ -21,8 +23,8 @@
 					<p>少女前线模拟器</p>
 				</div>
 			</div>
-			<div id="footline">制作者信息</div>
+			<div id="footline">Welcome!</div>
+			<img src="./view/loading.gif" id="loading" />
 		</div>
-		<a href="https://github.com/Evealicemier/gfmoni/issues">给制作者留言 Leave your comment</a>
 	</body>
 </html>
