@@ -72,6 +72,75 @@ body {
 	margin-left: 88px;
 	margin-right: 86px;
 }
+#leftBlock {
+	width: 190px;
+	float: left;
+}
+.leftBlockName {
+	width: 190px;
+	height: 30px;
+	background-color: #383839;
+}
+.leftBlocknamePic {
+	width: 56px;
+	height: 30px;
+	background-image: url('./leftBlockNamePicBackground.png');
+	background-size: 56px 30px; 
+}
+.leftBlockNameText {
+	float: right;
+	margin-right: 51px;
+	color: #F2FFFF;
+	margin-top: 5px;
+}
+.leftBlockinfo {
+	width: 161px;
+	height: 52px;
+	border: solid #F2FFFF 1px;
+	background-color: #383839;
+	margin-top: 11px;
+	margin-bottom: 17px;
+}
+.leftBlockinfoData {
+	width: 80px;
+	padding-left: 6px;
+	color: F2FFFF;
+	font-size: 13px;
+}
+
+#centerBlock {
+	margin-left: 19px;
+	margin-right: 22px;
+	width: 444px;
+	float: left;
+}
+[id*="spot"] {
+	width: 147px;
+	height: 147px;
+	background-color: #383839;
+}
+#centerBlock table {
+	border-collapse: collapse;
+}
+#centerBlock table,#centerBlock th,#centerBlock td {
+	border: solid 1px #F2FFFF;
+}
+#buffBar {
+	width: 444px;
+	height: 29px;
+	background-image: url('./buffBar.png');
+}
+#timeBar {
+	margin-top: 12px;
+	color: #333333;
+}
+#timeAdj {
+	margin-left:20px;
+	margin-right: 13px;
+	width: 359px;
+	height: 18px;
+	background-image: url('./timeAdjBar.png');
+}
 
 /** Footline **/
 #footline {
