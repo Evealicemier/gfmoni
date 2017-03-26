@@ -8,21 +8,17 @@
 		<meta charset="utf-8" />
 		<link href="./view/style.css" rel="stylesheet" type="text/css"/>
 		<script src="./controller/inilization.js"></script>
+		<script src="./controller/changePage.js"></script>
 		<script src="./controller/requestDatabase.js"></script>
 	</head>
 	<body onload="inilization();">
 		<div id="container">
 			<div id="headline">
-				<span><p>首页</p></span>
-				<span><p>枪娘模拟器</p></span>
-				<span><p>阵营模拟器</p></span>
+				<span><p><a onclick="changePage(0)">首页</a></p></span>
+				<span><p><a onclick="changePage(1)">枪娘模拟器</a></p></span>
+				<span><p><a onclick="changePage(2)">阵营模拟器</a></p></span>
 			</div>
-			<div id="content">
-				<div id="logo">
-					<a target="about:none" href="http://gf.ppgame.com/" title=" Click to go to official page of Girls' Frontline"><img src="./view/LOGO.png" alt="Girls' fontline logo"/></a>
-					<p>少女前线模拟器</p>
-				</div>
-			</div>
+			<div id="content"></div>
 			<div id="footline">Welcome!</div>
 			<img src="./view/loading.gif" id="loading" />
 		</div>
