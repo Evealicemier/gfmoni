@@ -1,15 +1,9 @@
-html {
-	height: 100%;
-	width: 100%;
-}
 body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
 	background-size: contain;
 	margin: 0px;
-	height: 100%;
-	width: 100%;
 	font-family: "Microsoft YaHei", "MicrosoftYaHei", "微软雅黑", Arial, "Arial";
 	font-size: 14px;
 }
@@ -53,7 +47,7 @@ body {
 
 /** Content **/
 #content {
-	width: 100%;
+	width: 1024px;
 	height: 668px;
 	overflow: hidden;
 }
@@ -74,10 +68,17 @@ body {
 
 /** Footline **/
 #footline {
+	width: 1024px;
 	background-color: black;
 	height: 32px;
 	text-align: center;
 	font-size: 18px;
 	color: #F4F4F4;
 	padding-top: 8px;
+	position: absolute;
+}
+#loading {
+	float: right;
+	height: 32px;
+	position: relative;
 }
