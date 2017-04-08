@@ -12,15 +12,29 @@
 		<script src="./controller/requestDatabase.js"></script>
 	</head>
 	<body onload="inilization();">
-		<div id="container">
-			<div id="headline">
-				<span><p><a onclick="changePage(0)">首页</a></p></span>
-				<span><p><a onclick="changePage(1)">枪娘模拟器</a></p></span>
-				<span><p><a onclick="changePage(2)">阵营模拟器</a></p></span>
+		<div id="page">
+			<div id="container">
+				<nav id="headline">
+					<span><p><a onclick="changePage(0)">首页</a></p></span>
+					<span><p><a onclick="changePage(1)">枪娘模拟器</a></p></span>
+					<span><p><a onclick="changePage(2)">阵营模拟器</a></p></span>
+				</nav>
+				<main id="content"></main>
+				<div id="footline">Welcome!</div>
+				<img src="./view/loading.gif" id="loading" />
 			</div>
-			<div id="content"></div>
-			<div id="footline">Welcome!</div>
-			<img src="./view/loading.gif" id="loading" />
+			<div id="s1" style="background-color: #FFDDDD;">
+				Right section<br />
+				可以拿来做一个外部的查询器什么的，也就是在不进行模拟器内选择时查看信息。<br />
+				这样可以保存模拟器模拟出来的阵型的同时，方便查看别的小姐姐的数据。<br />
+				<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+			</div>
+			<div id="s2" style="background-color: #DDDDFF;">
+				Some content here<br />
+				可以用来显示一些信息什么的。<br />
+				比如说素材信息，数据库最新更新时间，使用说明什么的。<br />
+				<br /><br /><br />
+			</div>
 		</div>
 	</body>
 </html>
