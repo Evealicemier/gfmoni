@@ -1,8 +1,5 @@
 body {
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center;
-	background-size: contain;
+	background-color: #EEEEEE;
 	margin: 0px;
 	font-family: "Microsoft YaHei", "MicrosoftYaHei", "微软雅黑", Arial, "Arial";
 	font-size: 14px;
@@ -11,6 +8,30 @@ body {
 	padding: 0px;
 	margin: 0px;
 }
+
+/** Page layout **/
+#page {
+	width: 1024px;
+	margin: 0px auto;
+}
+
+/** Section1 **/
+#s1 {
+	width: 1014px;
+	border: solid #000000 1px;
+	padding: 0px 5px;
+}
+
+/** Section1 **/
+#s2 {
+	width: 1014px;
+	border: solid #000000 1px;
+	padding: 0px 5px;
+}
+
+/*********************************************************
+Core section CSS
+*********************************************************/
 
 /** Container **/
 #container {
@@ -37,6 +58,7 @@ body {
     justify-content: center;
     text-align: center;
 	float: left;
+	cursor: pointer;
 }
 #headline span:hover {
 	border-bottom: solid #F4F4F4 4px;
